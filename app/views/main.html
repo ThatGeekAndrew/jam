@@ -1,0 +1,100 @@
+<!-- <div ng-include="'components/navbar/navbar.html'"></div> -->
+<header class="hero-unit" id="intro">
+  <div class="container">
+
+    <div class="logo-wrapper">
+      <a id="logo" href="#">
+        <div class="logo">
+          <div class="light">
+              <img class="bulb img-responsive" src="assets/images/bulb.png"/>
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <h1>Geek Smarter</h1>
+    <p class="lead">
+      I'm Andrew and I <span id="titles">don't think you have JavaScript enabled. :(
+      <br>Or I fucked up. Which is way more likely</span>.<br>
+      <span class="hidden-xs">Here's my social life:</span>
+    </p>
+
+  <div class="col-xs-12 social-links">
+    <div class="col-xs-2 col-sm-1 col-xs-offset-2 col-sm-offset-4 github-link">
+      <a href="https://github.com/geeksmarter/" target="_blank" title="GitHub Profile"><i class="fa fa-3x fa-github-square"></i></a>
+    </div>
+    <div class="col-xs-2 col-sm-1 facebook-link">
+      <a href="https://facebook.com/geeksmarter/" target="_blank" title="Facebook Profile"><i class="fa fa-3x fa-facebook-square"></i></a>
+    </div>
+    <div class="col-xs-2 col-sm-1 twitter-link">
+      <a href="https://twitter.com/geeksmarter/" target="_blank" title="Twitter Profile"><i class="fa fa-3x fa-twitter-square"></i></a>
+    </div>
+    <div class="col-xs-2 col-sm-1 ghost-link">
+      <a href="http://ghost.geeksmarter.com/" target="_blank" title="Ghost Blog"><i class="fa fa-3x fa-pencil-square"></i></a>
+    </div>
+  </div>
+
+</header>
+
+<script>
+
+var titles = [
+  'focus on the user experience',
+  'strive to design intuitively',
+  'love front end code creativity',
+  'use scalable node architecture',
+  'build beautiful applications',
+  'can create real brand identity',
+  'use facebook way too much',
+  'create original content',
+  'grow social media presences',
+  'use the cloud to scale my web applications',
+  'execute on clever logo and graphic design',
+  'hack up new concepts and prototypes regularly',
+  'help people visualize their data',
+  'love JavaScript development',
+  'do appealing site redesigns',
+  'engineer for SEO and Social Media shareability',
+  'build web applications',
+  'create insightful advertising campaigns',
+  'offer quality, custom themeing on many platforms',
+  'really, really like memes. A lot',
+  'urge you to type the konami code',
+  'try to build meaningful things',
+  'make cool shit for teh webz',
+  'contribute to open source',
+  'enjoy the I work do every day',
+  'want to hear your startup pitch',
+  'use bleeding edge technologies in my work',
+  'emphasize on subtle aesthetics',
+  'am a HTML and CSS wizard'
+];
+
+function rotateTitles() {
+  // Choose a random line from the array "titles"
+  var random = Math.floor(Math.random()* titles.length);
+  $('#titles').text(titles[random]).fadeIn()
+    .delay(7000).fadeOut(200, rotateTitles);
+}
+$(rotateTitles);
+
+// Clicking the logo will trigger a CSS animation once then get it ready again for the next click
+
+$("#logo").click(function(event){
+    event.preventDefault();
+});
+
+$(document).on('click', '#logo', function (e) {
+    $('.bulb').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function (e) {
+    
+      $('.bulb').removeClass('animate');
+    });
+    
+    $('.bulb').removeClass('animate').addClass('animate');
+});
+
+cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
+  alert('You are pretty observant. Care to discuss any startup ideas?');
+});
+
+</script>
