@@ -5,23 +5,16 @@
 @import url(https://fonts.googleapis.com/css?family=Exo:700|Open+Sans:300);
 
 /**
- * App-wide Styles
+ * Table of Contents:
+ * -Fonts and app-wide styles
+ * -Finish this you lazy bum.
  */
-
+ 
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
-}
-
-/**
- * Table of Contents:
- * -Do this eventually.
- * -You lazy bum.
- */
-a {
-    outline: none;
 }
 
 #intro {
