@@ -143,6 +143,7 @@ module.exports = function (grunt) {
     },
 
     // Empties folders to start fresh
+    // Exception .git folder (if any) and CNAME file
     clean: {
       dist: {
         files: [{
@@ -150,7 +151,8 @@ module.exports = function (grunt) {
           src: [
             '.tmp',
             '<%= yeoman.dist %>/{,*/}*',
-            '!<%= yeoman.dist %>/.git{,*/}*'
+            '!<%= yeoman.dist %>/.git{,*/}*',
+            '!<%= yeoman.dist %>/CNAME'
           ]
         }]
       },
