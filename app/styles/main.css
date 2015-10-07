@@ -5,9 +5,7 @@
 @import url(https://fonts.googleapis.com/css?family=Exo:700|Open+Sans:300);
 
 /**
- * Table of Contents:
- * -Fonts and app-wide styles
- * -Finish this you lazy bum.
+ * App styles
  */
  
 .browsehappy {
@@ -135,6 +133,9 @@
 }
 
 @media (max-width: 480px) {
+    .hero-unit {
+        padding: 15vh 0;
+    }
     #intro h1 {
         font-size: 40px;
     }
