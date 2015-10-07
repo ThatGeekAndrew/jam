@@ -11,7 +11,8 @@
     "angular-sanitize": "^1.3.0",
     "angular-touch": "^1.3.0",
     "fontawesome": "^4.4.0",
-    "cheet.js": "*"
+    "cheet.js": "*",
+    "scrollReveal.js": "*"
   },
   "devDependencies": {
     "angular-mocks": "^1.3.0"
@@ -27,10 +28,15 @@
       ]
     },
     "fontawesome": {
-        "main": [
-          "less/font-awesome.less",
-          "css/font-awesome.css"
-        ]
-      }
+      "main": [
+        "less/font-awesome.less",
+        "css/font-awesome.css"
+      ]
+    },
+    "scrollreveal": {
+      "main": [
+        "dist/scrollReveal.js"
+      ]
+    }
   }
 }
