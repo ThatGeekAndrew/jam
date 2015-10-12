@@ -1,3 +1,4 @@
+<!--<button type="button" class="menu btn btn-lg btn-primary outline hvr-shutter-out-vertical">Menu</button>-->
 <header class="hero-unit" id="intro">
   <div class="container">
 
@@ -12,9 +13,8 @@
     </div>
     
     <h1 data-sr='wait 0.2s, enter bottom, move 15px'>Geek Smarter</h1>
-    <p class="lead">
-      <span data-sr='wait 0.25s, enter left, move 20px'>I'm Andrew and I <span id="titles">don't think you have JavaScript enabled. :(
-      <br>Or I fucked up. Which is way more likely</span>.<br></span>
+    <p class="lead col-md-8 col-md-offset-2">
+      <span data-sr='wait 0.25s, enter left, move 20px'>I'm Andrew and I <span id="titles">make clean, modern websites and applications with node and other great technologies. Make sure you have JavaScript enabled</span>.<br></span>
       <span class="hidden-xs" data-sr='wait 0.3s, enter right, move 20px'>Here's my social life:</span>
     </p>
 
@@ -57,9 +57,9 @@
     'help people visualize their data',
     'love JavaScript development',
     'do appealing site redesigns',
-    'engineer for SEO and Social Media shareability',
-    'build web applications',
-    'create insightful advertising campaigns',
+    'engineer for SEO and Social Media',
+    'bring a new trick to each project',
+    'create fun, engaging ad campaigns',
     'really, really like memes. A lot',
     'urge you to type the konami code',
     'try to build meaningful things',
@@ -73,7 +73,7 @@
   ];
 
   function rotateTitles() {
-    // Choose a random line from the array "titles"
+    // Choose a random line from titles array
     var random = Math.floor(Math.random()* titles.length);
     $('#titles').text(titles[random]).fadeIn()
       .delay(7000).fadeOut(200, rotateTitles);
