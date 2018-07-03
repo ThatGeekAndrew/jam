@@ -64,10 +64,13 @@
     "time-grunt": "^1.2.1",
     "grunt-usemin": "^3.1.1",
     "grunt-wiredep": "^2.0.0",
-    "grunt-svgmin": "^2.0.1"
+    "grunt-svgmin": "^2.0.1",
+    "snyk": "^1.88.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -85,5 +88,6 @@
   "bugs": {
     "url": "https://github.com/geeksmarter/jam/issues"
   },
-  "homepage": "https://github.com/geeksmarter/jam#readme"
+  "homepage": "https://github.com/geeksmarter/jam#readme",
+  "snyk": true
 }
