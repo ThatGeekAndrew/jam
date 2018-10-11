@@ -38,7 +38,7 @@
     "test": "test"
   },
   "dependencies": {
-    "grunt": "^0.4.5",
+    "grunt": "^1.0.3",
     "grunt-autoprefixer": "^2.2.0",
     "font-awesome": "^4.4.0",
     "grunt-concurrent": "^1.0.1",
